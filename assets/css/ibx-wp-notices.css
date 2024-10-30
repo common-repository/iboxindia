@@ -1,0 +1,13 @@
+.hide {
+    display: none;
+}
+.ibx-notice-container {
+    padding: 10px 5px;
+}
+.ibx-review-notice-container {
+    margin-top: 10px;
+}
+.ibx-review-notice-container span.dashicons {
+    margin-left: 10px;
+    margin-top: 4px;
+}

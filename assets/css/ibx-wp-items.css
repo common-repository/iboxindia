@@ -1,0 +1,137 @@
+.dummy {
+    display: none;
+}
+.ibx-items-browser .ibx-items {
+    clear: both;
+    padding: 20px 0;
+}
+
+.ibx-item .notice {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.ibx-items-browser .ibx-item {
+    cursor: pointer;
+    /* float: left; */
+    margin-top: 25px;
+    position: relative;
+    /* width: 30.6%; */
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+    box-sizing: border-box
+}
+
+.ibx-items-browser .ibx-item:nth-child(3n) {
+    margin-right: 0
+}
+
+.ibx-items-browser .ibx-item:focus,.ibx-items-browser .ibx-item:hover {
+    cursor: pointer
+}
+
+.ibx-items-browser .ibx-item .ibx-item-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    padding: 15px;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: #fff;
+    background: rgba(255,255,255,.65)
+}
+
+.ibx-items-browser .ibx-item .ibx-item-actions {
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+    height: auto;
+    background: rgba(244,244,244,.7);
+    border-left: 1px solid rgba(0,0,0,.05)
+}
+
+.ibx-items-browser .ibx-item.focus .ibx-item-actions,.ibx-items-browser .ibx-item:focus .ibx-item-actions,.ibx-items-browser .ibx-item:hover .ibx-item-actions {
+    opacity: 1
+}
+
+.ibx-items-browser .ibx-item .ibx-item-screenshot {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    transition: opacity .2s ease-in-out
+}
+
+.ibx-items-browser .ibx-item .ibx-item-screenshot:after {
+    content: "";
+    display: block;
+    padding-top: 66.66666%
+}
+
+.ibx-items-browser .ibx-item .ibx-item-screenshot img {
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: opacity .2s ease-in-out
+}
+
+.ibx-items-browser .ibx-item:focus .ibx-item-screenshot,.ibx-items-browser .ibx-item:hover .ibx-item-screenshot {
+    background: #fff
+}
+
+.ibx-items-browser .ibx-item:focus .ibx-item-screenshot img,.ibx-items-browser .ibx-item:hover .ibx-item-screenshot img {
+    opacity: .4
+}
+
+.ibx-items-browser .ibx-item:focus {
+    border-color: #5b9dd9;
+    box-shadow: 0 0 2px rgba(30,140,190,.8)
+}
+
+.ibx-items-browser .ibx-item.active:focus .ibx-item-actions {
+    display: block
+}
+
+.ibx-item-container {
+    position: relative
+}
+
+.ibx-items-browser .ibx-item .ibx-item-actions {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding: 5px 15px;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.1)
+}
+
+.tag {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: #236095;
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 2px 5px;
+    border-radius: 4px;
+    z-index: 10;
+}
+.iboxindia-settings {
+    background: #FFF;
+    border: 1px solid #327dba;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.loading {
+    width: 50px;
+    height: 50px;
+    background: url('../images/loading.gif');
+    background-size: contain;
+}
